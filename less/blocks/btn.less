@@ -1,0 +1,31 @@
+.btn {
+  display: block;
+  width: 200px;
+  padding: 17px 0;
+  padding-right: 20px;
+
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  background-color: #25365d;
+  border-radius: 30px;
+}
+
+.btn::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+
+  background-image: url("../img/download.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.btn:hover.btn::before {
+  background-position: bottom;
+}
